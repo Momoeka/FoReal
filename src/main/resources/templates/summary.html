@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreal Project Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h1,
+        section h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            list-style: none;
+        }
+
+        ul li {
+            background-color: #e0e0e0;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        ul li:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section id="overview">
+        <h1>Foreal Project Overview</h1>
+        <p>Welcome to Foreal! This application is designed to demonstrate the integration of various modern technologies
+            and practices to create a robust, secure, and scalable web application.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>CRUD Operations</li>
+            <li>Image Upload and Delete</li>
+            <li>Spring Security</li>
+            <li>Role-Based Access Control</li>
+            <li>Payment Integration using RazorPay</li>
+            <li>Session Management with Thymeleaf</li>
+            <li>Google Auth Login</li>
+            <li>Image Storage on AWS S3</li>
+            <li>Database Deployment on AWS RDS</li>
+            <li>Hosting on AWS EC2</li>
+            <li>Relational Database Design</li>
+            <li>Professional UI with Navbar, CSS, and JS</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For more information, please contact us at <a href="mailto:info@foreal.com">info@foreal.com</a>.</p>
+    </section>
+
+    <footer>
+        &copy; 2024 Foreal. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

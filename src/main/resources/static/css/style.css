@@ -1,0 +1,115 @@
+.navbar-light .navbar-nav .nav-link {
+    /* font-size: 5rem; */
+    color: #000;
+}
+
+/* Style for the expanded image */
+#expandedImg {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Style for the overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    cursor: pointer;
+}
+
+/* Style for the thumbnail images */
+.card-img-top {
+    cursor: pointer;
+}
+
+/* -=hata do----------------------------------------------------------------- */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Adjust spacing between icons */
+}
+
+.contact-icons a {
+    color: #000;
+    /* Default icon color */
+    font-size: 24px;
+    /* Icon size */
+    transition: color 0.3s;
+    /* Smooth transition for color change on hover */
+}
+
+.contact-icons a:hover {
+    color: #007bff;
+    /* Color on hover */
+}
+
+/* -=----------------------------------------------------------------- */
+
+body {
+    background: rgb(255, 255, 218);
+    background: linear-gradient(90deg, rgba(255, 255, 218, 1) 0%, rgba(255, 219, 253, 1) 48%, rgba(182, 198, 250, 1) 100%);
+
+}
+
+
+/* =========================================================================== */
+/* Form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Form content */
+.form-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+/* Form fields */
+.form-fields {
+    margin-bottom: 20px;
+}
+
+/* Form field labels */
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Form field input */
+.form-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
