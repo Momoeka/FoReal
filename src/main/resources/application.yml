@@ -1,0 +1,33 @@
+    spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+          your client id
+your cliend pass
+            scope:
+              - profile
+              - email
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            user-name-attribute: sub
+cloud:
+  aws:
+    credentials:
+         your access id
+your access secret pass
+    region:
+      static: your region name
+    s3:
+      bucket: yuor bucket name
+
+# Optionally, you can also specify more AWS SDK settings if needed
+aws:
+  s3:
+    endpoint: https://s3.YOUR_AWS_REGION.amazonaws.com
+    path-style-access: true
+
